@@ -2,7 +2,7 @@
 
 <br /><br /><br /><br /><br />
 
-# ARCHER2 MPI course (August 2025)
+# ARCHER2 MPI course (April 2026)
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
@@ -55,61 +55,61 @@ MPI from Python.
 
 <h2>Message Passing Programming with MPI</h2>
 
-<p><strong>Dates: </strong>18th - 19th August 2025, University of Leeds
-<p><strong>Location: </strong>LR C (2.08), School of Civil Engineering
+<p><strong>Dates: </strong>22nd - 23rd April 2026, Imperial College, London
+<p><strong>Location: </strong>Lecture Theatre 414, Roderic Hill Building, South Kensington Campus, London, SW7 2AZ
 
 <h3>Timetable</h3>
 
-<h4>Monday 18th August</h4>
+<h4>Wednesday 22nd April</h4>
 
 <ul>
 
-<li> 09:00 Trainer available to help with practical issues such as
+<li> 09:30 Trainer available to help with practical issues such as
 logging on to ARCHER2<br><strong>Feel free to skip this session and join for
-the first lecture at 09:30</strong>
-<li>    09:30 Message-Passing Concepts
-<li>    10:15 Practical: Parallel Traffic Modelling
-<li>    10:45 Break
-<li>    11:15 MPI Programs
-<li>    12:00 MPI Programs on ARCHER2
-<li>    12:15 Practical: Hello World
-<li>    12:30 Lunch
-<li>    13:30 Point-to-Point Communication
-<li>    14:15 Practical: Pi
-<li>    15:00 Break
-<li>    15:30 Communicators, Tags and Modes
-<li>    16:15 Practical: Pi / Ping-Pong
+the first lecture at 10:00</strong>
+<li>    10:00 Message-Passing Concepts
+<li>    10:45 Practical: Parallel Traffic Modelling
+<li>    11:15 Break
+<li>    11:45 MPI Programs
+<li>    12:30 MPI Programs on ARCHER2
+<li>    12:45 Practical: Hello World
+<li>    13:00 Lunch
+<li>    14:00 Point-to-Point Communication
+<li>    14:45 Practical: Pi
+<li>    15:30 Break
+<li>    16:00 Communicators, Tags and Modes
+<li>    16:45 Practical: Pi / Ping-Pong
 <li>    17:00 Finish
 </ul>
 
-<h4>Tuesday 19th August</h4>
+<h4> Thursday 23rd April</h4>
 
 <ul>
 
-<li>    09:00 Practical: Pi / Ping-Pong (cont)
-<li>    09:30 Pi Solution
-<li>    10:00 Non-Blocking Communication
-<li>    10:30 Practical: Message Round a Ring
-<li>    10:45 Break
-<li>    11:15 Practical: Message Round a Ring (cont)
-<li>    12:00 Collective Communication
-<li>    12:30 Lunch
-<li>    13:30 Practical: Collective Communication
-<li> 14:00 Virtual Topologies
-<li> 14:30 Practical: Message Round a Ring (cont)
-<li> 15:00 Break
-<li> 15:15 Derived Data Types
-<li> 16:00 Practical: Message Round a Ring (cont)
+<li>    10:00 Pi Solution
+<li>    10:30 Non-Blocking Communication
+<li>    11:00 Practical: Message Round a Ring
+<li>    11:15 Break
+<li>    11:45 Practical: Message Round a Ring (cont)
+<li>    12:30 Collective Communication
+<li>    13:00 Lunch
+<li>    14:00 Practical: Collective Communication
+<li> 14:30 Virtual Topologies
+<li> 15:00 Practical: Message Round a Ring (cont)
+<li> 15:30 Break
+<li> 15:45 Derived Data Types
 <li> 16:30 Case Study
+<li> 16:45 Practical: Message Round a Ring (cont)
 <li> 17:00 Finish
 
 </ul>
 
-<h4>Wednesday 27th August (online turorial session)</h4>
+<h4>Friday 27th August
+
+<li> 10:00 - 12:00 Online tutorial session
 
 <ul>
 
-<li><a href="https://www.youtube.com/watch?v=6QU7sv2KgCY">Recording of "Tips and Tricks" lecture from online course in 2022
 
 </ul>
 

@@ -106,7 +106,7 @@ the first lecture at 10:00</strong>
 
 </ul>
 
-<h4>Friday 30th August
+<h4>Friday 30th August</h4>
 
 </ul>
 

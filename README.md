@@ -110,7 +110,7 @@ the first lecture at 10:00</strong>
 
 <ul>
 
-<li> 10:00 - 12:30 Online tutorial session
+<li> 10:00 - 12:30 Online tutorial session including interactive multiple-choice quiz
 
 </ul>
 

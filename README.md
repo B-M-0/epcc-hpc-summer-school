@@ -27,11 +27,13 @@ point-to-point communication, non-blocking operations, derived
 datatypes, virtual topologies, collective communication and general
 design issues.
 
-This course will be run over two days, slightly shortert than the
-normal three-day format, using a variety of methods including formal
-lectures, practical exercises, programming examples and informal
-tutorial discussions. This enables lecture material to be supported by
-the tutored practical sessions in order to reinforce the key concepts.
+This course will be run over two and a half days: the first two days
+comprise face-to-face teaching, with the final half day being held a
+week later online. We use a variety of methods including formal
+lectures, practical exercises, programming examples, quizzes and
+informal tutorial discussions. This enables lecture material to be
+supported by the tutored practical sessions in order to reinforce the
+key concepts.
 
 <h3>Intended Learning Outcomes</h3>
 
@@ -106,7 +108,7 @@ the first lecture at 10:00</strong>
 
 <h4>Friday 27th August
 
-<li> 10:00 - 12:00 Online tutorial session
+<li> 10:00 - 12:30 Online tutorial session
 
 <ul>
 

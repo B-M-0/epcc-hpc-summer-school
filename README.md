@@ -108,12 +108,9 @@ the first lecture at 10:00</strong>
 
 <h4>Friday 30th August</h4>
 
-</ul>
-
-<li> 10:00 - 12:30 Online tutorial session
-
 <ul>
 
+<li> 10:00 - 12:30 Online tutorial session
 
 </ul>
 

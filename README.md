@@ -51,6 +51,23 @@ of Wednesday 17th June. We will take taxis in 2 groups:
 * Taha Ahmed
 * Ginny Douglas
 
+While you are waiting / after you get back you will be working at the
+desks in EPCC (Level 2 Bayes).
+
+Group 1 will leave in 2 taxis (4 students + 1 staff in each taxi) from
+Potterow, the main road just outside the Bayes lecture theatre, at
+**13:15**; Group 2 will leave at **14:30**.
+
+I expect that Group 1 will be back at Bayes just before 4pm; Group 2
+back just after 5pm.
+
+The address is: ACF Building, Edinburgh Technopole, Bush Estate,
+Penicuik, EH26 0QA
+
+Entry to the ACF is via a barrier – you need to buzz to be let through.
+
+If there are any issues then contact me (David Henty) on: 07974 730432.
+
 
 
 ### Lectures

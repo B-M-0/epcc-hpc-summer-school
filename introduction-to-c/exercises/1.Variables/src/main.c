@@ -19,9 +19,9 @@
 int main(int argc, char* argv[])
 {
     // Declare an integer called "year" and initialise it to 2023.
-
+	int year =  2023; 
     // Declare a double-precision variable called "pi" and initialise it to 3.14.
-
+	double pi =  3.14;
     /* Do not modify the line below. In this exercise, you only declare the two
      * variables needed, namely: "year" and "pi". You will learn how to print
      * in an exercise later.

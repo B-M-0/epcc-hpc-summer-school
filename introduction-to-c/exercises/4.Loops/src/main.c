@@ -42,10 +42,12 @@ int main(int argc, char* argv[])
      */
     
     int a = 0;
-    while(true && a < 5)
+    while(true)
     {
         printf("Value of variable 'a' = %d.\n", a);
         a++;
+	if (a ==5) 
+	   break;
     }
 
     return EXIT_SUCCESS;

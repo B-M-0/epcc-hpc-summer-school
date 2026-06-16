@@ -19,17 +19,16 @@
 int main(int argc, char* argv[])
 {
     // Declare a variable 'a', as an integer.
-
+    int a = 10 % 3;
     // Assign to variable 'a' the value 10 modulo 3.
 
     // Write the equivalent using a combined operator.
-    a = a + 1;
-
+    a += 1;
     // Write the equivalent using the increment operator.
-    a = a + 1;
+    a++;
 
     // Write the equivalent using a combined operator.
-    a = a % 10;
-
+    a %= 10;
+    printf("%d",a ); 
     return EXIT_SUCCESS;
 }

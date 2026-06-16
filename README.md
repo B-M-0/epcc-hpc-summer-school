@@ -21,8 +21,37 @@ There will be a "get-together" meal (food and soft drinks provided) at
 16 Nicolson St, Edinburgh, EH8 9DH. This is less than 10 minutes' walk
 from the flats in Darroch Court.
 
-We are also planning a meal at **7pm on Friday 26th** at Howies
-Victoria Street but the details are still being confirmed.
+There will be a final meal at **7pm on Friday 26th** at The Canopy
+Restaurant nearby at the Edinburgh Futures Institute.
+
+### ACF Visit
+
+We will be visiting the Advanced Computing Facility on the afternoon
+of Wednesday 17th June. We will take taxis in 2 groups:
+
+#### Group 1
+
+Abdul Mahdi
+Alice Seaman
+Callum Wright-Parish
+Cara Voysey
+Elliot Henton-Mitchell
+Jack Hill
+Klara Kurucova
+Mehul Bandhu
+
+#### Group 2
+
+Nourdin Gaber Ibrahim
+Oskar Harber
+Rhea Bose
+Rommel Gregorio
+Sivanujan Sivapalan
+Syeda Nasir
+Taha Ahmed
+Ginny Douglas
+
+
 
 ### Lectures
 

@@ -174,6 +174,11 @@ Things to look at include:
 
 ### Parallel sharpen
 
+Note that all parallel jobs **must be run from /work** so after logging in type:
+````
+cd /work/tc073/tc073/username/
+````
+
 This is an opportunity for you to investigate parallel scaling of the
 image sharpening example as described in sections 3.10 onward.
 

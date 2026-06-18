@@ -205,3 +205,6 @@ If you want to look at Gustafson's law - larger problems scale better
 - then increase the filter size by changing `d`, e.g. you could try
 `d=10` or `d=14`.
 
+## CFD Example
+
+To get the CFD example use `git clone https://github.com/davidhenty/cfd` and see the exercise sheet in <a href="IntroHPC/CFD_serial1.pdf">IntroHPC/CFD_serial1.pdf</a>

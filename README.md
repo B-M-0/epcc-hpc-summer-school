@@ -24,6 +24,22 @@ from the flats in Darroch Court.
 There will be a final meal at **7pm on Friday 26th** at The Canopy
 Restaurant nearby at the Edinburgh Futures Institute.
 
+### Friday AM Guest Lectures
+
+**This session takes place in room 5.46, the top floor of the Bayes Centre**
+
+The session will comprise guest lectures from a range of HPC
+experts. Catering will be provided so please arrive well before the
+first talk to ensure you get free coffee and biscuits!
+
+| Time | Event |
+| --- | ---  |
+|09:00 - 09:30| Tea, coffee and biscuits (provided) |
+|09:30 - 10:30| Ritchie Somerville (EPCC Deputy Director): **The Next UK National Supercomputing Service at EPCC** |
+|10:30 - 11:00| Tea and coffee (provided) |
+|11:00 - 11:30| Kirsty Pringle (EPCC): **The Role of Research Software Engineers in Public Engagement** |
+|11:30 - 12:00| Liz Ing-Simmons (Imperial): **Sustainable computing in the research lifecycle**  |
+
 ### ACF Visit
 
 We will be visiting the Advanced Computing Facility on the afternoon

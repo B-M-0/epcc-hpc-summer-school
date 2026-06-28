@@ -1,0 +1,42 @@
+
+Lmod is automatically replacing "cce/20.0.0" with "amd/6.3.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/25.09.0     2) cray-mpich/9.0.1
+
+
+Lmod is automatically replacing "craype-x86-rome" with "craype-x86-milan".
+
+rm -f arraymalloc.o boundary.o cfd.o cfdio.o jacobi.o cfd velocity.dat colourmap.dat cfd.plt core
+cc -fopenmp -c arraymalloc.c
+cc -fopenmp -c boundary.c
+cc -fopenmp -c cfd.c
+cc -fopenmp -c cfdio.c
+cc -fopenmp -c jacobi.c
+cc -fopenmp -o cfd arraymalloc.o boundary.o cfd.o cfdio.o jacobi.o -lm	
+Scale Factor = 20, iterations = 4000
+Irrotational flow
+Running CFD on 640 x 640 grid using GPU offload
+
+Starting main loop...
+
+Completed iteration 1000
+Completed iteration 2000
+Completed iteration 3000
+Completed iteration 4000
+
+... finished
+After 4000 iterations, the error is 0.000435789
+Time for 4000 iterations was 0.888991 seconds
+Each iteration took 0.000222248 seconds
+
+
+Writing data files ...
+... done!
+
+Written gnuplot script 'cfd.plt'
+... finished

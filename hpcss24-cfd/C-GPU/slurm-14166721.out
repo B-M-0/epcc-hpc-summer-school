@@ -1,0 +1,36 @@
+
+Lmod is automatically replacing "cce/20.0.0" with "amd/6.3.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/25.09.0     2) cray-mpich/9.0.1
+
+
+Lmod is automatically replacing "craype-x86-rome" with "craype-x86-milan".
+
+rm -f arraymalloc.o boundary.o cfd.o cfdio.o jacobi.o cfd velocity.dat colourmap.dat cfd.plt core
+cc -fopenmp -c arraymalloc.c
+cc -fopenmp -c boundary.c
+cc -fopenmp -c cfd.c
+cc -fopenmp -c cfdio.c
+cc -fopenmp -c jacobi.c
+cc -fopenmp -o cfd arraymalloc.o boundary.o cfd.o cfdio.o jacobi.o 
+ld.lld: error: undefined symbol: sqrt
+>>> referenced by cfd.c
+>>>               cfd.o:(main)
+>>> referenced by cfd.c
+>>>               cfd.o:(main)
+
+ld.lld: error: undefined symbol: pow
+>>> referenced by cfdio.c
+>>>               cfdio.o:(writedatafiles)
+>>> referenced by cfdio.c
+>>>               cfdio.o:(colfunc)
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:76: cfd] Error 1
+srun: error: nid200001: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=14166721.0
+slurmstepd: error: execve(): /mnt/lustre/a2fs-work4/work/tc073/tc073/agm87/hpcss24-cfd/C-GPU/./pi: No such file or directory

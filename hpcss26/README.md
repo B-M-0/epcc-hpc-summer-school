@@ -21,8 +21,70 @@ There will be a "get-together" meal (food and soft drinks provided) at
 16 Nicolson St, Edinburgh, EH8 9DH. This is less than 10 minutes' walk
 from the flats in Darroch Court.
 
-We are also planning a meal at **7pm on Friday 26th** at Howies
-Victoria Street but the details are still being confirmed.
+There will be a final meal at **7pm on Friday 26th** at The Canopy
+Restaurant nearby at the Edinburgh Futures Institute.
+
+### Friday AM Guest Lectures
+
+**This session takes place in room 5.46, the top floor of the Bayes Centre**
+
+The session will comprise guest lectures from a range of HPC
+experts. Catering will be provided so please arrive well before the
+first talk to ensure you get free coffee and biscuits!
+
+| Time | Event |
+| --- | ---  |
+|09:00 - 09:30| Tea, coffee and biscuits (provided) |
+|09:30 - 10:30| Ritchie Somerville (EPCC Deputy Director): **The Next UK National Supercomputing Service at EPCC** |
+|10:30 - 11:00| Tea and coffee (provided) |
+|11:00 - 11:30| Kirsty Pringle (EPCC): **The Role of Research Software Engineers in Public Engagement** (online)|
+|11:30 - 12:00| Liz Ing-Simmons (Kings College London): **Sustainable computing in the research lifecycle** (online) |
+
+### ACF Visit
+
+We will be visiting the Advanced Computing Facility on the afternoon
+of Wednesday 17th June. We will take taxis in 2 groups:
+
+#### Group 1
+
+* Abdul Mahdi
+* Alice Seaman
+* Callum Wright-Parish
+* Cara Voysey
+* Elliot Henton-Mitchell
+* Jack Hill
+* Klara Kurucova
+* Mehul Bandhu
+
+#### Group 2
+
+* Nourdin Gaber Ibrahim
+* Oskar Harber
+* Rhea Bose
+* Rommel Gregorio
+* Sivanujan Sivapalan
+* Syeda Nasir
+* Taha Ahmed
+* Ginny Douglas
+
+While you are waiting / after you get back you will be working at the
+desks in EPCC (Level 2 Bayes).
+
+Group 1 will leave in 2 taxis (4 students + 1 staff in each taxi) from
+Potterow, the main road just outside the Bayes lecture theatre, at
+**13:15**; Group 2 will leave at **14:30**.
+
+I expect that Group 1 will be back at Bayes just before 4pm; Group 2
+back just after 5pm.
+
+The address is: ACF Building, Edinburgh Technopole, Bush Estate,
+Penicuik, EH26 0QA
+
+Entry to the ACF is via a barrier – you need to buzz to be let through.
+
+If there are any issues then contact me (David Henty) on: 07974 730432.
+
+
 
 ### Lectures
 
@@ -45,9 +107,9 @@ have their own hands-on exercises - it is not just "chalk and talk"!
 | Day | Morning (normally 9:30)  || Afternoon (normally 14:00) ||
 | --- | ---|--  | --- |--|
 | |  | |
-| Mon 15 | Bayes (**arrive 09:00**) | Introductions / bash / git | Bayes | bash / git |
+| Mon 15 | Bayes (**arrive 09:00**) | Introductions / bash (https://swcarpentry.github.io/shell-novice/) | Bayes | git (https://swcarpentry.github.io/git-novice/) |
 | Tue 16 | Bayes | Introduction to C |Bayes | Introduction to C |
-| Wed 17 | Bayes | Introduction to HPC (i) | Bayes | ACF Visit / [Practical](https://github.com/EPCCed/hpcss24-sharpen) |
+| Wed 17 | Bayes | Introduction to HPC (i) | Bayes | ACF Visit / [Practical](https://github.com/davidhenty/sharpen) |
 | Thu 18 | Bayes | Introduction to HPC (ii) | Bayes | Machine Learning (i)|
 | Fri 19| Bayes | Machine Learning (ii) | Bayes | Practical |
 | | | | | |
@@ -57,3 +119,161 @@ have their own hands-on exercises - it is not just "chalk and talk"!
 | Thu 25 | Lister | Introduction to MPI (i)  | Lister |  Introduction to MPI (ii)  |
 | Fri 26 | Bayes | HPC Guest Lectures | Bayes | Practical |
 
+### Image sharpening example
+
+The afternoon practical sessions (Wednesday and Friday) are a chance
+for you to either catch up with the material from the first few days
+(if it was new to you) or to work on a more substantial problem.
+
+We will be using the **Image Sharpening example**.
+
+For now this exercise illustrates a number of points:
+
+ * an algorithm that does a significant amount of computation;
+ * how to run a Python program on the ARCHER2 login node;
+ * how to compile and run a C program on the ARCHER2 login node;
+ * a comparison of the relative performance of C and (naively written) Python;
+ * an opportunity to see a real C program (warts and all!).
+
+You can find the image sharpening example at https://github.com/davidhenty/sharpen
+
+The code loops over all the pixels in an image and applies a large
+filter to each pixel that uses the values of the pixels in its near
+vicinity (by default a 17x17 square).
+
+On ARCHER2 you will need to load a module to get a suitable version of
+Python: `module load cray-python`
+
+To view the input and output images (fuzzy.pgm and sharpened.pgm), use `module load imagemagick` then `display fuzzy.pgm`. If you cannot get graphics
+to work on your machine then you can copy the images back to your desktop, but you will have to convert then to a non-PGM format first. For example, on ARCHER2 you can
+issue `convert fuzzy.pgm fuzzy.png`.
+
+#### Timing
+
+The code prints out times: the calculation time and the overall run time. The calculation time just measures how long it took to apply the filter to the image **excluding** the IO overheads of reading in the fuzzy image and writing out the sharpened one; the overall run time is the total time from start to finish. To find out how long was spent in IO just subtract the two.
+
+#### Python example
+
+To run the code:
+````
+module load cray-python
+python ./sharpen.py
+````
+
+Things you might like to investigate:
+
+*    How fast is the code on your laptop compared to the ARCHER2 login nodes?
+
+*    If you want the program to run faster you can change the size of the smoothing filter - try reducing the value of `d` in `sharpenalg.py` from its default value d=8. How does the runtime vary with d? Can you understand this behaviour by looking at the code?
+
+*    The program is deliberately written very simply and the performance can easily be improved. For example, the values of the (very time-consuming) function `filter()` could be pre-calculated and stored in an array. If you alter the code make sure that the output is still correct, e.g. by comparing the output image `sharpened.pgm` before and after your changes: they should be **identical**, i.e. `diff sharpened.pgm sharpened-reference.pgm` should show no differences (i.e. no output).
+
+  #### C example
+
+The C example is described in `doc/sharpen-cirrus.pdf` but note that
+the *details are for the Cirrus system and this year we are using
+ARCHER2.*
+
+This sheet covers a lot of topics and assumes you have not used an HPC system before. The material in sections 3.6 to 3.8 is most relevant here: you can
+skip most of the early sections. The instructions talk about downloading a tar file but you do not need to do this as you already have the source code from github.
+
+To compile and run on the login nodes:
+````
+make
+./sharpen
+````
+
+Things to look at include:
+
+ *   Do you understand the code? The way 2D arrays are allocated using `malloc` is a little complicated - if you really want to know what is going on here then ask a demonstrator!
+ *   How much faster is the compiled C version compared to the Python code?
+
+### Parallel sharpen
+
+Note that all parallel jobs **must be run from /work** so after logging in type:
+````
+cd /work/tc073/tc073/username/
+````
+
+This is an opportunity for you to investigate parallel scaling of the
+image sharpening example as described in sections 3.10 onward.
+
+#### Using the batch system
+
+To run a job in the batch system (assuming you have compiled the code): `sbatch sharpen.slurm`
+
+You can check the progress of jobs using: `squeue --me`
+
+When complete, output will appear in a file called something like `slurm-1234567.out`
+
+### Exercises
+
+The default exercises are around looking at the scaling of the pure
+MPI version and seeing if it follows Amdahl's law. You should:
+
+  * plot graphs of speedup and parallel efficiency
+  * see what value of alpha gives a good fit
+  * check if this agrees with what you would estimate from the IO time
+
+To change the number of processors, alter the values of `nodes`, `ntasks` and `tasks-per-node`.
+
+If you want to look at Gustafson's law - larger problems scale better
+- then increase the filter size by changing `d`, e.g. you could try
+`d=10` or `d=14`.
+
+## CFD Example
+
+To get the CFD example use `git clone https://github.com/davidhenty/cfd` and see the exercise sheet in <a href="IntroHPC/CFD_serial1.pdf">IntroHPC/CFD_serial1.pdf</a>
+
+### Parallel CFD
+
+**Note that you should update your git repo as I have fixed the error in the Makefile (had optimisation turned off) and updated the Slurm scripts.**
+
+You should do parallel scaling studies of the MPI example to
+investigate strong scaling. You should do this for various values of
+the scale factor - for large process counts (many hundreds,
+i.e. multiple nodes) you will need quite a large problem to see any
+speedup.
+
+Notes:
+
+* You should vary the number of steps depending on the problem size
+  and process count in order to have a reasonable runtime of a few
+  seconds - much shorter and timings may not be reliable, much longer
+  and you may just be burning CPU cycles for no benefit.
+
+* You are welcome to try the version in `C-OMP` - the Slurm file
+  should be relatively self explanatory
+
+* The strong scaling studies should illustrate Gustafson's law,
+  i.e. big problems scale better. However, you are welcome to
+  investigate weak scaling: here, if you double the scale factor, you
+  must increas the process count by **a factor of 4**.
+
+### CFD on the GPU
+
+To get a GPU-enabled version of the CFD code you will need to issue
+`git clone https://github.com/EPCCed/hpcss24-cfd`
+
+
+There is a lot to learn for GPU offload so please continue with
+exercises from this morning, but I have added a "C-GPU" directory to
+the hpcss24-cfd git repo which contains a simple example of using
+these directives for the cfd example.
+
+As for the previous OpenMP example the code only currently works for
+the simpler case when you do not specify a Reynolds number (i.e. for
+inviscid / irrotational flow). If you want you can try to extend to
+the general case.
+
+As set up, you should just be able to `sbatch cfd.slurm` and the job will run in the reservation after compiling the program with all the required modules. Remember
+that you can easily alter the problem size and iteration count -
+`srun -n 1 ./cfd 20 10000` runs for 10,000 iterations on a problem size of 
+640x640 (i.e. 32 times the scale factor of 20).
+
+When measuring performance you will need to run much larger problems
+than for the CPU as you need a lot of grid points to keep the very
+large number of GPU threads active. You will also need to run for a
+large number of iterations to get reliable performance results: for
+large problems the cost of copying data to and from the GPU can be
+significant.

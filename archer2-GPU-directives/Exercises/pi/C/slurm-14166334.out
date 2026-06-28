@@ -1,0 +1,17 @@
+
+Lmod is automatically replacing "cce/20.0.0" with "amd/6.3.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/25.09.0     2) cray-mpich/9.0.1
+
+
+Lmod is automatically replacing "craype-x86-rome" with "craype-x86-milan".
+
+rm -f pi
+cc -g -O3 -fopenmp -o pi pi.c
+Pi = 3.14159265358980
+Total Time = 0.013659 (sec)

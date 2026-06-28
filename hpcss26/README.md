@@ -45,28 +45,7 @@ first talk to ensure you get free coffee and biscuits!
 We will be visiting the Advanced Computing Facility on the afternoon
 of Wednesday 17th June. We will take taxis in 2 groups:
 
-#### Group 1
-
-* Abdul Mahdi
-* Alice Seaman
-* Callum Wright-Parish
-* Cara Voysey
-* Elliot Henton-Mitchell
-* Jack Hill
-* Klara Kurucova
-* Mehul Bandhu
-
-#### Group 2
-
-* Nourdin Gaber Ibrahim
-* Oskar Harber
-* Rhea Bose
-* Rommel Gregorio
-* Sivanujan Sivapalan
-* Syeda Nasir
-* Taha Ahmed
-* Ginny Douglas
-
+###  
 While you are waiting / after you get back you will be working at the
 desks in EPCC (Level 2 Bayes).
 

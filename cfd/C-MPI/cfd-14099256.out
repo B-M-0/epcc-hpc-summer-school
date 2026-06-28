@@ -1,0 +1,39 @@
+srun: Job step's --cpus-per-task value exceeds that of job (100 > 1). Job step may never run.
+Scale Factor = 8, iterations = 20000
+Irrotational flow
+Running CFD on 256 x 256 grid using 4 process(es) 
+
+Starting main loop...
+
+Completed iteration 1000
+Completed iteration 2000
+Completed iteration 3000
+Completed iteration 4000
+Completed iteration 5000
+Completed iteration 6000
+Completed iteration 7000
+Completed iteration 8000
+Completed iteration 9000
+Completed iteration 10000
+Completed iteration 11000
+Completed iteration 12000
+Completed iteration 13000
+Completed iteration 14000
+Completed iteration 15000
+Completed iteration 16000
+Completed iteration 17000
+Completed iteration 18000
+Completed iteration 19000
+Completed iteration 20000
+
+... finished
+After 20000 iterations, the error is 6.56802e-05
+Time for 20000 iterations was 3.8024 seconds
+Each iteration took 0.00019012 seconds
+
+
+Writing data files ...
+... done!
+
+Written gnuplot script 'cfd.plt'
+... finished

@@ -1,0 +1,2 @@
+srun: unrecognized option '--cpu-per-node=10'
+Try "srun --help" for more information
